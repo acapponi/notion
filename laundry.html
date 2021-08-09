@@ -32,12 +32,17 @@
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         background: url(https://acapponi.github.io/notion/images/frame.png) no-repeat center;
-        height: 140px;
-        width: 240px;
+        height: 110px;
+        width: 230px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-size: cover;
+        font-size:27px;
+      }
+      
+      .content > span{
+        margin-left:.75rem;
       }
 
     </style>
@@ -68,7 +73,7 @@
       // console.log(daysPassed % 5);
 
       if(daysPassed % 5 == 0){
-        var node = document.createTextNode('TODAY');
+        var node = document.createTextNode('today');
         el.appendChild(node);
       }else{
 
