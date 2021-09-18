@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
 
     <style>
 
@@ -22,23 +22,25 @@
 
 
       .content{
-        font-family: 'MonteCarlo', cursive;
+        font-family: 'Birthstone', cursive;
         text-align: center;
         letter-spacing: 2px;
         font-weight: 500;
-        padding: 1rem;
+        padding: 2rem 2rem 1rem;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        background: url(https://acapponi.github.io/notion/images/frame.png) no-repeat center;
-        height: 110px;
-        width: 230px;
+        /* background: url(https://acapponi.github.io/notion/images/frame.png) no-repeat center; */
+        background:url(https://acapponi.github.io/notion/images/background2.png) no-repeat left center;
+        min-height: 190px;
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-size: cover;
-        font-size:27px;
+        background-size: contain;
+        font-size:28px;
+
       }
 
     </style>
@@ -66,11 +68,11 @@
       // console.log(daysPassed % 5);
 
       if(daysPassed % 5 == 0){
-        var node = document.createTextNode('Laundry today');
+        var node = document.createTextNode('Hoy toca cambiar las sábanas');
       }else{
-        var node = document.createTextNode('Have a great day!');  
+        var node = document.createTextNode('La única batalla que se pierde es la que se abandona');
       }
-      
+
       el.appendChild(node);
 
     </script>
