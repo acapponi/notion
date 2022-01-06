@@ -1,0 +1,63 @@
+<!-- Custom quotes -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+
+    <style>
+
+      body{
+        background: #2f3437;
+        color:rgba(255, 255, 255, 0.9);
+        position:relative;
+        padding:0;
+        margin:0;
+      }
+
+
+      .content{
+        font-family: 'Birthstone', cursive;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-size: contain;
+        font-size:28px;
+        text-align: left;
+		border-left:8px solid rgba(255, 255, 255, 0.9);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="content">
+        <span id="widgetLaundry"></span>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+	var el = document.getElementById('widgetLaundry');
+	
+	var quotes = [
+		"La única batalla que se pierde es la que se abandona",
+		"Locura es hacer lo mismo una y otra vez esperando obtener resultados diferentes",
+		"Like the moon, we must go through phases of emptiness to feel full again"
+	]
+
+	var node = document.createTextNode(quotes[Math.floor(Math.random() * 3)]);
+
+	el.appendChild(node);
+
+    </script>
+  </body>
+</html>
